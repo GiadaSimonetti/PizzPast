@@ -31,7 +31,7 @@ describe('PizzPast', () => {
   });
 
   it('returns the number as a string', () => {
-    expect(pizzPast.mainCourse(8)).toEqual(8);
+    expect(pizzPast.mainCourse(8)).toEqual('8');
   });
 
 });
