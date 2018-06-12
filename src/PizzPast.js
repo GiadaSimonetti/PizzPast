@@ -6,13 +6,8 @@ class PizzPast {
 
   mainCourse(int){
     const string = this.dishes.reduce((accumulator, [num, subString]) => {
-      if (int % num === 0) {
-        return accumulator + subString || accumulator;
-      } else {
-        return accumulator;
-      }
+      return (int % num === 0) ? accumulator + subString : accumulator;
     }, '');
-    console.log(string);
     return string || int.toString();
   }
 }
